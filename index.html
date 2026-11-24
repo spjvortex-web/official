@@ -16,8 +16,8 @@
         .glow {
             box-shadow: 0 0 60px -15px rgba(56, 189, 248, 0.3);
         }
-        .glow-purple {
-            box-shadow: 0 0 60px -15px rgba(168, 85, 247, 0.3);
+        .glow-amber {
+            box-shadow: 0 0 60px -15px rgba(245, 158, 11, 0.25);
         }
     </style>
 </head>
@@ -28,23 +28,24 @@
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20">
-                    🌀
+                    
                 </div>
                 <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">SPJ Vortex</span>
             </div>
             <nav class="hidden md:flex items-center gap-8 text-sm text-slate-400 font-medium">
                 <a href="#proyectos" class="hover:text-purple-400 transition-colors">Proyectos</a>
                 <a href="#beta-testing" class="hover:text-cyan-400 transition-colors">Beta Testing</a>
+                <a href="#donaciones" class="hover:text-amber-400 transition-colors">Donaciones</a>
                 <a href="#privacidad" class="hover:text-purple-400 transition-colors">Privacidad</a>
             </nav>
-            <a href="#beta-testing" class="px-4 py-2 text-xs font-semibold rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500 hover:text-black transition-all">
-                Probar Nueva App
+            <a href="#donaciones" class="px-4 py-2 text-xs font-semibold rounded-full bg-amber-500/10 text-amber-300 border border-amber-500/30 hover:bg-amber-400 hover:text-slate-950 transition-all">
+                Apoyar Proyecto
             </a>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section (Estudio) -->
+   
         <section class="relative pt-32 pb-20 overflow-hidden">
             <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/15 rounded-full blur-3xl pointer-events-none"></div>
             <div class="absolute top-1/3 left-1/3 -translate-x-1/2 w-72 h-72 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
@@ -61,7 +62,7 @@
             </div>
         </section>
 
-        <!-- Portafolio de Proyectos -->
+  
         <section id="proyectos" class="py-12">
             <div class="max-w-6xl mx-auto px-6">
                 <div class="flex items-center gap-4 mb-10">
@@ -69,32 +70,37 @@
                     <div class="h-px bg-slate-800 flex-grow"></div>
                 </div>
 
-                <!-- Proyecto Destacado (App de Química) -->
+            
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-slate-900/40 border border-slate-800 p-8 sm:p-12 rounded-3xl mb-8">
                     <div>
                         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-xs font-bold text-cyan-400 mb-6 uppercase tracking-wider">
                             <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
                             Proyecto Activo
                         </span>
-                        <h3 class="text-3xl font-bold mb-4">Calculadora de Enlaces Químicos</h3>
+                        <h3 class="text-3xl font-bold mb-4">Bondly — Calculadora de Enlaces Químicos</h3>
                         <p class="text-slate-400 mb-6 leading-relaxed">
-                            Nuestra aplicación más reciente. Solo selecciona dos elementos de la tabla periódica y el algoritmo calculará inmediatamente la diferencia de electronegatividad para determinar si el enlace resultante es <strong>Iónico, Covalente Polar o Covalente No Polar</strong>.
+                            Nuestra aplicación más reciente. Selecciona dos elementos de la tabla periódica y el algoritmo calculará inmediatamente la diferencia de electronegatividad para determinar si el enlace resultante es <strong>Iónico, Covalente Polar o Covalente No Polar</strong>.
                         </p>
                         <div class="flex flex-wrap gap-3 mb-8">
                             <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md text-xs font-mono">Android</span>
                             <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md text-xs font-mono">Química</span>
                             <span class="px-3 py-1 bg-slate-800 text-slate-300 rounded-md text-xs font-mono">Educación</span>
                         </div>
-                        <a href="#beta-testing" class="inline-flex px-6 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold text-sm hover:bg-cyan-400 transition-all">
-                            Participar en la Beta (Google Play)
-                        </a>
+                        <div class="flex flex-wrap gap-3">
+                            <a href="#beta-testing" class="inline-flex px-6 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold text-sm hover:bg-cyan-400 transition-all">
+                                Participar en la Beta
+                            </a>
+                            <a href="#donaciones" class="inline-flex px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/70 text-slate-200 font-bold text-sm hover:border-amber-400/50 hover:text-amber-300 transition-all">
+                                Apoyar la App
+                            </a>
+                        </div>
                     </div>
 
-                    <!-- Mockup de App Química -->
+
                     <div class="mx-auto w-full max-w-sm rounded-[2.5rem] p-3 bg-gradient-to-b from-slate-700/50 to-slate-900/80 border border-slate-700/60 glow">
                         <div class="rounded-[2rem] bg-slate-900 p-6 border border-slate-800 text-left">
                             <div class="flex justify-between items-center pb-4 border-b border-slate-800/80">
-                                <span class="text-xs font-mono text-cyan-400">⚛️ ANÁLISIS DE ENLACE</span>
+                                <span class="text-xs font-mono text-cyan-400">⚛️ BONDLY • ANÁLISIS</span>
                             </div>
                             <div class="py-6 space-y-4">
                                 <div class="flex justify-between items-center bg-slate-950 p-3 rounded-xl border border-slate-800/70">
@@ -128,7 +134,6 @@
                     </div>
                 </div>
 
-                <!-- Futuros Proyectos (Grid) -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="p-8 rounded-2xl bg-slate-900/30 border border-slate-800 border-dashed flex flex-col justify-center items-center text-center opacity-60">
                         <div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-xl mb-4">🛠️</div>
@@ -144,24 +149,24 @@
             </div>
         </section>
 
-        <!-- Convocatoria 20 Testers (Google Play) -->
+        <!-- Convocatoria Testers (Google Play) -->
         <section id="beta-testing" class="py-20 border-t border-slate-900">
             <div class="max-w-4xl mx-auto px-6">
                 <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-slate-900 to-slate-950 border border-cyan-500/30 glow relative overflow-hidden">
                     <div class="relative z-10 text-center">
-                        <span class="text-xs uppercase tracking-wider font-bold text-cyan-400 mb-2 inline-block">Fase de Pruebas: Calculadora de Enlaces</span>
+                        <span class="text-xs uppercase tracking-wider font-bold text-cyan-400 mb-2 inline-block">Fase de Pruebas: Bondly</span>
                         <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Ayúdanos a publicar en la Play Store</h2>
                         <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto mb-8">
-                            Para lanzar oficialmente nuestra aplicación de química, las políticas de Google nos exigen que 20 personas la prueben durante 14 días continuos. ¡Únete a nuestra lista de testers!
+                            Para lanzar oficialmente nuestra aplicación de química, las políticas de Google nos exigen que nuestros testers la prueben durante 14 días continuos. ¡Únete a nuestra lista!
                         </p>
 
                         <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-                            <!-- Enlace a Google Form -->
-                            <a href="https://forms.gle/PsustdhPvQLz2vXJA" target="_blank" class="px-6 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold text-sm hover:bg-cyan-400 transition-all text-center">
+                           
+                            <a href="https://forms.gle/mTujLBBQMUwAEce4A" target="_blank" class="px-6 py-3 rounded-xl bg-cyan-500 text-slate-950 font-bold text-sm hover:bg-cyan-400 transition-all text-center">
                                 1. Registrar mi correo Beta
                             </a>
-                            <!-- Enlace de la pista cerrada de Play Store -->
-                            <a href="#" target="_blank" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 font-bold text-sm text-slate-200 hover:border-slate-500 transition-all text-center">
+                           
+                            <a href="https://drive.google.com/drive/folders/1a3NDHgGyFUSa0gP3jzfSY259iN_O1Zmt" target="_blank" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 font-bold text-sm text-slate-200 hover:border-slate-500 transition-all text-center">
                                 2. Instalar la App
                             </a>
                         </div>
@@ -170,16 +175,57 @@
             </div>
         </section>
 
-        <!-- Política de Privacidad -->
+  
+        <section id="donaciones" class="py-20 border-t border-slate-900">
+            <div class="max-w-4xl mx-auto px-6">
+                <div class="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 border border-amber-500/30 glow-amber relative overflow-hidden text-center">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-xs font-bold text-amber-300 mb-4 uppercase tracking-wider">
+                        ☕ Apoya nuestro desarrollo
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold mb-4">Contribuye al crecimiento de Bondly</h2>
+                    <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto mb-8">
+                        Desarrollamos herramientas educativas gratuitas para estudiantes y docentes. Si nuestra app te ayudó a estudiar o resolver tus ejercicios, puedes apoyarnos con una donación voluntaria para financiar futuras actualizaciones y nuevos proyectos.
+                    </p>
+
+                    <!-- Selector rápido de monto -->
+                    <div class="flex flex-wrap justify-center gap-3 mb-8" id="amount-selector">
+                        <button type="button" data-amount="20" class="amount-btn px-4 py-2 rounded-xl border border-slate-700 bg-slate-800/70 text-sm font-semibold text-slate-300 hover:border-amber-400 transition-all">
+                            $20 MXN
+                        </button>
+                        <button type="button" data-amount="50" class="amount-btn px-4 py-2 rounded-xl border border-amber-400 bg-amber-500/20 text-sm font-bold text-amber-300 transition-all">
+                            $50 MXN
+                        </button>
+                        <button type="button" data-amount="100" class="amount-btn px-4 py-2 rounded-xl border border-slate-700 bg-slate-800/70 text-sm font-semibold text-slate-300 hover:border-amber-400 transition-all">
+                            $100 MXN
+                        </button>
+                        <button type="button" data-amount="" class="amount-btn px-4 py-2 rounded-xl border border-slate-700 bg-slate-800/70 text-sm font-semibold text-slate-300 hover:border-amber-400 transition-all">
+                            Otro monto
+                        </button>
+                    </div>
+
+                   
+                    <div class="flex flex-col items-center">
+                        <a id="paypal-donate-link" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-[#0070ba] hover:bg-[#005ea6] text-white font-bold text-base shadow-lg shadow-blue-950/50 transition-all">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.93 4.778-4.005 7.201-9.138 7.201h-2.19a.563.563 0 0 0-.556.479l-1.187 7.527h-.506l-.24 1.516a.56.56 0 0 0 .554.647h3.882c.46 0 .85-.334.922-.788.06-.26.76-4.852.816-5.09a.932.932 0 0 1 .923-.788h.58c3.76 0 6.705-1.528 7.565-5.946.36-1.847.174-3.388-.777-4.471z"/>
+                            </svg>
+                            <span id="paypal-btn-text">Donar $50 MXN con PayPal</span>
+                        </a>
+                        <span class="text-xs text-slate-500 mt-3">Pago seguro procesado directamente a través de PayPal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="privacidad" class="py-20 border-t border-slate-900 bg-slate-950/70">
             <div class="max-w-4xl mx-auto px-6 text-slate-400 text-sm space-y-6 leading-relaxed">
                 <div class="mb-10">
                     <h2 class="text-2xl font-bold text-white mb-2">Políticas de Privacidad</h2>
-                    <p class="text-slate-500">Última actualización: Septiembre de 2026</p>
+                    <p class="text-slate-500">Última actualización: Noviembre de 2026</p>
                 </div>
                 
                 <p>
-                    Esta Política de Privacidad describe cómo <strong>SPJ Vortex</strong> y sus aplicaciones (incluyendo, pero no limitado a, la Calculadora de Enlaces Químicos) recopilan, utilizan y protegen su información al utilizar nuestros servicios móviles.
+                    Esta Política de Privacidad describe cómo <strong>SPJ Vortex</strong> y sus aplicaciones (incluyendo, pero no limitado a, Bondly — Calculadora de Enlaces Químicos) recopilan, utilizan y protegen su información al utilizar nuestros servicios móviles y web.
                 </p>
 
                 <h3 class="text-base font-semibold text-slate-200">1. Recopilación y uso de datos</h3>
@@ -187,9 +233,9 @@
                     Nuestras aplicaciones están diseñadas para funcionar de manera local. No solicitamos, almacenamos ni recopilamos información personal identificable (nombres, números de teléfono o contraseñas). Los procesos y algoritmos se ejecutan dentro de su dispositivo sin enviar datos a nuestros servidores.
                 </p>
 
-                <h3 class="text-base font-semibold text-slate-200">2. Publicidad (Google AdMob)</h3>
+                <h3 class="text-base font-semibold text-slate-200">2. Publicidad y Donaciones (Google AdMob y PayPal)</h3>
                 <p>
-                    Nuestras aplicaciones gratuitas pueden incluir publicidad proporcionada por <strong>Google AdMob</strong>. Esta plataforma de terceros puede recopilar y procesar identificadores de publicidad del dispositivo y datos de uso general para optimizar y personalizar los anuncios mostrados, conforme a sus propias políticas de privacidad.
+                    Nuestras aplicaciones gratuitas pueden incluir publicidad proporcionada por <strong>Google AdMob</strong>. Asimismo, nuestro sitio web ofrece enlaces externos hacia <strong>PayPal</strong> para recibir donaciones voluntarias; todas las transacciones financieras son procesadas directamente bajo las políticas de seguridad y privacidad de PayPal, sin que SPJ Vortex tenga acceso a sus datos bancarios o tarjetas.
                 </p>
                 <p>
                     Para más información sobre las prácticas de Google, puede consultar la 
@@ -214,6 +260,42 @@
     <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-600">
         <p>© 2026 SPJ Vortex. Todos los derechos reservados.</p>
     </footer>
+
+  
+    <script>
+      
+        const PAYPAL_URL = "https://www.paypal.com/paypalme/SuzG22";
+
+        const donateLink = document.getElementById("paypal-donate-link");
+        const btnText = document.getElementById("paypal-btn-text");
+        const amountButtons = document.querySelectorAll(".amount-btn");
+
+        function updatePayPalLink(amount) {
+            const cleanBase = PAYPAL_URL.replace(/\/$/, "");
+            if (cleanBase.includes("paypal.me") && amount) {
+                donateLink.href = `${cleanBase}/${amount}`;
+            } else {
+                donateLink.href = cleanBase;
+            }
+            btnText.textContent = amount ? `Donar $${amount} MXN con PayPal` : "Donar con PayPal";
+        }
+
+      
+        updatePayPalLink("50");
+
+        amountButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                amountButtons.forEach(b => {
+                    b.classList.remove("border-amber-400", "bg-amber-500/20", "font-bold", "text-amber-300");
+                    b.classList.add("border-slate-700", "bg-slate-800/70", "font-semibold", "text-slate-300");
+                });
+                btn.classList.remove("border-slate-700", "bg-slate-800/70", "font-semibold", "text-slate-300");
+                btn.classList.add("border-amber-400", "bg-amber-500/20", "font-bold", "text-amber-300");
+
+                updatePayPalLink(btn.dataset.amount);
+            });
+        });
+    </script>
 
 </body>
 </html>
